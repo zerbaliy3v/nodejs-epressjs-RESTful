@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commnets</title>
+</head>
+<body>
+    <h1>All Commerts</h1>
+    <hr>
+   <ul>
+    <%for (let i of com ){ %>
+        <li><%=i.comment%> --- <b><%= i.username %> </b> - <a href="http://api.x.com/comments/<%= i.id %>" ><button>get comment</button></a><form action="http://api.x.com/comments/<%= i.id %>?_method=DELETE" method="post"><button>delete a comment</button></form></li>
+        <hr>
+    <% } %> 
+   </ul>
+   <a href="http://api.x.com/comments/new"><button>CREATE NEW COMMENT</button></a>
+</body>
+</html>

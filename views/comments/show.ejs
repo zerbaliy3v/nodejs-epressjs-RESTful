@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>show</title>
+</head>
+<body>
+    <h1>Comment id: <%= comment.id %> </h1>
+    <p><%= comment.comment %>  --- <b><%= comment.username %></b> </p>
+    <a href="http://api.x.com/comments/"><button>Back To Home </button></a>
+    <br>
+    <a href="http://api.x.com/comments/<%=comment.id%>/edit"><button>Edit</button></a>
+</body>
+</html>
